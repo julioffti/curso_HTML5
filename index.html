@@ -4,10 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title of the document</title>
+    <script>document.createElement("myTag")</script>
 </head>
+    <style>
+        header, section, footer, nav, main, article, figure{
+            display: block;
+        }
+        myTag{
+            display: block;
+            background-color: #dddddd;
+            padding:50px;
+            font-size: 30px;
+        }
+    </style>
 
+<!-- Ativar, via JavaScript, o HTML5 em navegadores antigos -->
+
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
 <body>
-    Content of the document...
+
+<myTag>Minha tag</myTag>
 
 </body>
 
